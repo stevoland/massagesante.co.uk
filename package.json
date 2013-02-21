@@ -1,6 +1,6 @@
 {
   "name": "massagesante.co.uk",
-  "description": "Simple Node.js Express site for the gf",
+  "description": "Basic Node.js Express site for the gf",
   "url": "http://massagesante.co.uk",
   "version": "0.0.0",
   "private": true,
