@@ -10,8 +10,8 @@ var Validator = require('validator').Validator,
 var smtpTransport = nodemailer.createTransport("SMTP", {
     service: "Gmail",
     auth: {
-        user: "stevoland@gmail.com",
-        pass: "14u2c14u"
+        user: process.env.SMTP_EMAIL,
+        pass: process.env.SMTP_PASSWORD
     }
 });
 
