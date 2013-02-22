@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>      <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>{{#title}}{{title}} - {{/title}}Massage Santé - Profesional mobile massage in Central &amp; West London</title>
+        <meta name="description" content="Looking for an exceptional massage treatment in London? Whether you need an intense Sport massage session or a relaxing moment in your busy schedule, Maria is here to help with a quality massage at an affordable price from the comfort of your own home.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="cleartype" content="on">
+
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="/static/stylesheets/lt-ie9.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="/static/stylesheets/style.css">
+        <!--<![endif]-->
+
+        <script>
+            if (document.getElementById) {
+                document.documentElement.className = document.documentElement.className.split('no-js').join('js');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="padding">
+            <div class="container">
+                <header role="banner">
+                    <div class="ribbon">
+                        <h1 class="ribbon--heading">
+                            <span>M</span>assage <span>S</span>anté
+                        </h1>
+                    </div>
+                    <h2 class="tagline">Profesional mobile massage<span class="in-central-and-west-london"> in<span class="central-and-west"> Central<span class="and-west"> &amp; West</span></span> London</span></h2>
+
+                    <div class="details">
+                        <a href="tel:+447796547113">t: 07796 547113</a>
+                        <a href="mailto:hello@massagesante.co.uk">e: hello@massagesante.co.uk</a>
+                    </div>
+                </header>
+
+                <div class="main" id="content">
+                                {{>content}}
+                </div>
+
+                <footer>
+                    &copy; Copyright 2013 Massage Santé
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            (function (w, d) {
+                if (!d.getElementById) {
+                    return;
+                }
+
+                function dtClickHandler (e) {
+                    var dt = e.target,
+                        dd;
+
+                    if (dt.nodeName.toUpperCase() !== 'DT') {
+                        return;
+                    }
+
+                    dd = dt.nextSibling;
+                    while (dd && !(dd.nodeType === 1 && dd.nodeName.toUpperCase() === 'DD')) {
+                        dd = dd.nextSibling;
+                    }
+                    if (dd.nodeName.toUpperCase() !== 'DD') {
+                        return;
+                    }
+
+                    if (!/on/.test(dt.className)) {
+                        dt.className += ' on';
+                        dd.className += ' on';
+                    } else {
+                        dt.className = dt.className.split(' on').join('');
+                        dd.className = dd.className.split(' on').join('');
+                    }
+                }
+
+                var services = d.getElementById('services');
+                if (services) {
+                    services.addEventListener('click', dtClickHandler);
+                }
+
+
+                w.addEventListener("hashchange", function(event) {
+                    var element = d.getElementById(location.hash.substring(1));
+
+                    if (element) {
+                        if (!/^(?:a|select|input|button|textarea)$/i.test(element.tagName)) {
+                            element.tabIndex = -1;
+                        }
+                        element.focus();
+                    }
+
+                }, false);
+            }(window, document));
+
+
+            var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+            s.parentNode.insertBefore(g,s)}(document,"script"));
+        </script>
+    </body>
+</html>

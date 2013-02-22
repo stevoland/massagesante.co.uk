@@ -1,0 +1,146 @@
+<section class="intro">
+    <p><span>Looking for an exceptional massage treatment in London?</span> Whether you need an intense Sport massage session or a relaxing moment in your busy schedule, Maria is here to help with a quality massage at an affordable price from the comfort of your own home.</p>
+</section>
+
+<section>
+    <div class="ribbon ribbon__sub">
+        <h2 class="ribbon--heading"><span>Y</span>our therapist</h2>
+    </div>
+
+    <p>Maria is an ITEC qualified massage therapist since 2004. She has been working in Lyon and London in hotels, spas and as a mobile therapist for clients who are either unable to attend a massage clinic or find it more convenient to have a treatment at their own home. Elderly or convalescing people could find this to be a very useful option, as would the parents of young children who just want to relax ater a hard day at home. Maria is also fluent in Spanish, French, German and Italian.</p>
+</section>
+
+<section>
+    <div class="ribbon ribbon__sub">
+        <h2 class="ribbon--heading"><span>S</span>ervices</h2>
+    </div>
+
+    <p>Maria has years of experience providing the following services<span class="js-only"> (you can click each type for more details)</span>:</p>
+
+    <dl id="services">
+        <dt>Aromatherapy</dt>
+        <dd>
+                <p>This massage combines the benefits of massage therapy with the use of essential oils.
+They can have many different effects on the mind, body and spirit, and make an
+aromatherapy massage an uplifting experience.<p>
+
+<p>Essential oils are an aromatic essence distilled from a single botanical source and are
+renowned for their sedative, stimulating and analgesic properties. They have many
+different therapeutic uses.</p>
+                </dd>
+
+        <dt>Swedish massage</dt>
+        <dd>
+                <p>A system of long strokes, kneading, friction, tapping,
+percussion, vibration and shaking motions that apply pressure between muscles
+and bones, rubbing in the same direction as the flow of blood returning to the heart.<p>
+
+<p>Swedish Massage feels good, is relaxing and invigorating.It reduces stress, both
+emotional and physical, and is suggested as part of a regular program for stress
+management.</p>
+                </dd>
+
+        <dt>Deep tissue massage</dt>
+        <dd>
+                <p>Focuses on the deeper layers of muscle tissue. Using deep
+muscle compression and friction along a specific muscle, the purpose of deep
+tissue massage is to unstick the fibres of the muscles and release both toxins and
+get blood and oxygen circulating properly . It is both corrective and therapeutic. It
+is beneficial for many physical problems, including sports injuries and chronic pain.</p>
+        </dd>
+
+        <dt>Massage for pregnancy and for bedridden people</dt>
+        <dd>
+                <p>Maria is specially trained to use a combination of Swedish and Remedial techniques to help
+with the tensions and pains experienced during pregnancy or a person bedridden for a long time.
+These are often caused by the extra weight and shift in the centre of gravity for
+pregnant women or lack of movement an exercise for bedridden people. There are many
+physical benefits to pregnancy massage and bedridden people, in addition to the nurturing
+and emotional support provided by the practitioner. Massage reduces peripheral swelling,
+soothes the nervous system, helps to prevent insomnia, muscle cramps and back pain.</p>
+
+<p>Care must be taken during the first trimester but pregnancy massage is beneficial
+throughout the whole pregnancy, massage may be performed whilst she is lying on
+her side, seated, or on a special table that allows her to lie on her stomach. Once the
+pregnancy is advanced, she is discouraged from lying on her back as this may cause
+pressure on deep blood vessels.</p>
+
+<p>Regular massage throughout the pregnancy is also said to shorten labour time and the
+return to optimal fitness after birth.</p>
+        </dd>
+
+        <dt>Reiki</dt>
+        <dd>
+                <p>Reiki is a form of therapy that uses simple hands-on, no-touch, and visualization
+techniques, with the goal of improving the flow of life energy in a person. Reiki
+means "universal life energy" in Japanese, and Reiki practitioners are trained to detect
+and alleviate problems of energy flow on the physical, emotional, and spiritual level.</p>
+
+<p>Reiki provide many of the same benefits as traditional massage therapy, such as
+reducing stress, stimulating the immune system, increasing energy, and relieving the
+pain and symptoms of health conditions. Reiki is a gentle and safe technique, and has
+been used successfully in some hospitals. It has been found to be very calming and
+reassuring for those suffering from severe or fatal conditions. Reiki can been used by
+doctors, nurses, psychologists and other health professionals to bring touch and deeper
+caring into their healing practices.</p>
+
+<p>Reiki is one of the more esoteric alternative medical practices, because no one is sure
+exactly how it works on the physiological level.</p>
+        </dd>
+
+        <dt>Thai massage</dt>
+        <dd>
+                <p>This is a more physical manipulation of the body using passive
+stretching and gentle pressure with the hands and feet. Allied with yoga stretching
+movements, this massage will help to adjust the skeletal structure, increase
+flexibility, relieve muscular and joint tension, stimulate internal organs and balance
+the body's energy system. The effect is both relaxing and energising.</p>
+        </dd>
+        <dt>On-site massage</dt>
+        <dd>
+                <p>On-site massage is a fast, effective and versatile form of therapeutic treatment that
+can be performed in virtually any work environment. The massage concentrates on the
+back, shoulders, neck, arms and hands and scalp.</p>
+
+<p>The client sits in a standard chair, perhaps even at their desk. No oils are used and the
+client remains fully clothed throughout the massage. There is no disruption caused to other
+workers or the work environment. Each session normally lasts 20 minutes and takes place
+in any available space.</p>
+        </dd>
+
+        <dt>Indian Head massage</dt>
+        <dd>
+                <p>Based on the ancient healing system of Ayurveda, this form of massage
+                        works on the upper back, shoulders, upper arms, neck, scalp,
+ears and face.  The areas are massaged using firm yet gentle, rhythmic movements
+that involve acupressure points called Marma points.  Ayurvedic oils were traditionally
+used in this form of massage however the use of oils is now optional.</p>
+        </dd>
+
+        <dt>Facial Thai massage</dt>
+        <dd>
+                <p>Thai  facial massage relieves tension, promotes relaxation and restores energy to the face and body by increasing circulation. During sleep, circulation is decreased in the body, meaning less blood flow to the face which results in puffiness and a drained complexion. Facial massage stimulates blood flow in facial tissue, restoring a healthy glow and maintaining a firm and smooth appearance. Thai facial therapy uses gentle, circular strokes along differing regions of the head, face, and neck.</p>
+        </dd>
+    </dl>
+</section>
+
+<section>
+    {{>contact}}
+</section>
+
+<section>
+    <div class="ribbon ribbon__sub">
+        <h2 class="ribbon--heading"><span>D</span>uring your session</h2>
+    </div>
+
+    <p>In your first session, Maria will give a short consultation to ascertain if any injuries or illness may affect the massage. She may also ask you to consider what factors in your life may be contributing to the symptoms you are experiencing. For example, backache or muscle tension might be related to stress at work or family worries.</p>
+
+    <p>Maria will provide the massage table, oils, candles an music and will advise beforehand of any other requirements, such as a warm room. Clients will be requested to be appropriately attired, in accordance with the style of therapy that is being supplied.</p>
+</section>
+
+<section>
+    <div class="ribbon ribbon__sub">
+        <h2 class="ribbon--heading"><span>P</span>rices</h2>
+    </div>
+    <p>...</p>
+</section>

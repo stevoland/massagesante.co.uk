@@ -1,0 +1,783 @@
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+a {
+  color: #00e; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+  font-family: 'zap';
+  src: url("../fonts/zap-webfont.eot");
+  src: url("../fonts/zap-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/zap-webfont.woff") format("woff"), url("../fonts/zap-webfont.ttf") format("truetype"), url("../fonts/zap-webfont.svg#zap") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  height: 100%; }
+
+body {
+  position: relative;
+  font-family: Verdana, sans-serif; }
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: #B1E3E2;
+  box-shadow: inset 0 0 100px 20px #80d0cf; }
+
+.container {
+  min-height: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 10px 0.5px #38051a;
+  min-width: 320px; }
+
+.lt-ie7 {
+  width: 320px; }
+
+.padding {
+  margin: 0 auto;
+  max-width: 53em; }
+  @media screen and (min-width: 40em) {
+    .padding {
+      padding: 0 1.5em; } }
+
+header {
+  background: url(../images/banner.jpg) center center no-repeat;
+  background-size: cover;
+  height: 0;
+  padding: 30% 0 15% 0;
+  position: relative; }
+
+h1, h2 {
+  margin-top: 0; }
+
+.ribbon {
+  position: relative;
+  z-index: 3;
+  font-size: 2.2em;
+  left: -0.5em; }
+  @media screen and (min-width: 50em) {
+    .ribbon {
+      font-size: 2.5em; } }
+
+header .ribbon {
+  position: absolute;
+  bottom: 1em;
+  right: 0; }
+  @media screen and (min-width: 40em) {
+    header .ribbon {
+      right: auto;
+      bottom: 0.65em; } }
+
+.ribbon--heading {
+  height: 55px;
+  font-family: zap, serif;
+  font-size: 1em;
+  display: inline-block;
+  background-color: #42b9b6;
+  color: #38051a;
+  position: relative;
+  padding: 5px 0.75em 0 0.5em;
+  white-space: nowrap; }
+  @media screen and (min-width: 40em) {
+    .ribbon--heading {
+      position: relative; } }
+  @media screen and (min-width: 50em) {
+    .ribbon--heading {
+      height: 64px; } }
+
+header .ribbon--heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  @media screen and (min-width: 40em) {
+    header .ribbon--heading {
+      position: relative; } }
+
+@media screen and (min-width: 40em) {
+  .ribbon--heading:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid #276e6c;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-style: none;
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0; } }
+
+@media screen and (min-width: 40em) {
+  .ribbon--heading:after {
+    content: '';
+    font-size: 1em;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -30px;
+    border: 30px solid #42b9b6;
+    border-left-color: transparent;
+    border-right-color: transparent; } }
+@media screen and (min-width: 50em) {
+  .ribbon--heading:after {
+    right: -34px;
+    border: 35px solid #42b9b6;
+    border-left-color: transparent;
+    border-right-color: transparent; } }
+
+.ribbon--heading span {
+  font-size: 1.2em;
+  display: inline-block;
+  position: relative;
+  top: 0.25em; }
+
+.ribbon__sub {
+  left: -0.9em; }
+
+.ribbon__sub .ribbon--heading {
+  font-size: 0.8em;
+  height: 47px; }
+
+.ribbon__sub .ribbon--heading:after {
+  right: -24px;
+  border: none; }
+
+.tagline {
+  background: #ee3d86;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-weight: normal;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4em;
+  z-index: 2; }
+  @media screen and (min-width: 40em) {
+    .tagline {
+      bottom: -1em; } }
+
+.details {
+  position: absolute;
+  left: 1em;
+  top: 1em; }
+
+a {
+  display: inline-block;
+  background: #42b9b6;
+  text-decoration: none;
+  color: #38051a;
+  padding: 0 0.5em;
+  border-radius: 4px; }
+
+a:hover,
+a:active,
+a:focus {
+  background: #ee3d86;
+  color: #fff; }
+
+@media screen and (max-width: 40em) {
+  header a {
+    display: block;
+    margin-bottom: 0.5em; } }
+
+.main {
+  padding: 1em; }
+
+p {
+  margin-top: 0; }
+
+section {
+  margin-bottom: 2em; }
+
+.intro {
+  font-size: 1.2em;
+  margin-top: 4em; }
+  @media screen and (min-width: 40em) {
+    .intro {
+      margin-top: 1em; } }
+
+.intro span {
+  font-weight: bold; }
+
+dt {
+  display: inline-block;
+  padding: 0.25em 0.5em 0.4em 0.85em;
+  background: #ee3d86;
+  color: #fff;
+  margin: 0 0 0.5em -0.85em;
+  font-size: 1.2em; }
+
+dd {
+  margin: 0; }
+
+dd.on {
+  margin-bottom: 1em; }
+
+.js dd {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition-property: max-height;
+  -moz-transition-property: max-height;
+  -ms-transition-property: max-height;
+  -o-transition-property: max-height;
+  transition-property: max-height;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.js dd.on {
+  max-height: 50em; }
+
+.js dt {
+  cursor: pointer; }
+
+footer {
+  min-height: 4em;
+  background: #38051a;
+  padding: 1em;
+  color: #fff; }
+
+.name, .phone, .message, textarea {
+  display: block;
+  margin-bottom: 1em; }
+
+label {
+  font-weight: bold; }
+
+input, textarea {
+  font-weight: normal;
+  border: 1px solid #333333; }
+
+label.error {
+  color: #38051a; }
+
+input.error, textarea.error {
+  color: #38051a;
+  border: 2px solid #38051a; }
+
+.error-summary {
+  background: #760b37;
+  color: #fff;
+  padding: 0.5em;
+  margin-bottom: 1em; }
+
+.error-summary a {
+  background: transparent;
+  color: #fff;
+  display: inline;
+  padding: 0; }
+
+.error-summary a:hover,
+.error-summary a:focus
+.error-summary a:active {
+  text-decoration: underline; }
+
+.message {
+  margin: 1em 0 0 0; }
+
+#contact-message {
+  max-width: 100%; }
+
+.button {
+  padding: 0.55em 0.8em 0.8em 0.85em;
+  background: #ee3d86;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none; }
+
+@media screen and (max-width: 32em) {
+  .in-central-and-west-london {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; } }
+
+@media screen and (max-width: 41em) {
+  .central-and-west {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; } }
+
+@media screen and (max-width: 47em) {
+  .and-west {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; } }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.js-only {
+  display: none;
+  visibility: hidden; }
+
+.js .js-only {
+  display: block;
+  visibility: visible; }
+
+.js span.js-only {
+  display: inline; }
+
+/* Prevent callout */
+.nocallout {
+  -webkit-touch-callout: none; }
+
+.pressed {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {
+  -webkit-appearance: none; }
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+.gifhidden {
+  position: absolute;
+  left: -100%; }
+
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em; }
+
+.ir br {
+  display: none; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }

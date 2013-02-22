@@ -1,0 +1,25 @@
+{
+  "name": "massagesante.co.uk",
+  "description": "Simple Node.js Express site for the gf",
+  "url": "http://massagesante.co.uk",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd app; node app",
+    "start": "cd dist; node app"
+  },
+  "dependencies": {
+    "express": "*",
+    "mmm": "*",
+    "validator": "*",
+    "nodemailer": "*"
+  },
+  "devDependencies": {
+    "grunt": "0.4.0rc7",
+    "grunt-contrib-sass": "0.2.2rc7",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-copy": "0.4.0rc7",
+    "grunt-reduce": "git://github.com/stevoland/grunt-reduce.git",
+    "lactate": "~0.13.7"
+  }
+}
