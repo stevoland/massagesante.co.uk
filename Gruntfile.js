@@ -47,10 +47,22 @@ module.exports = function (grunt) {
     copy: {
       build: {
         files: [
-          { src: 'app/app.js', dest: 'dist/app.js' },
-          { src: 'app/routes/index.js', dest: 'dist/routes/index.js' },
-          { src: 'app/routes/contact.js', dest: 'dist/routes/contact.js' }
+          { src: 'app/*.js', dest: 'dist/', expand: true, flatten: true },
+          { src: 'app/routes/*.js', dest: 'dist/routes/', expand: true, flatten: true }
         ]
+      }
+    },
+
+    crypt: {
+      files: [
+        {
+          dir: 'app',
+          include: 'config.js',
+          encryptedExtension: '.encrypted'
+        }
+      ],
+      options: {
+        key: grunt.cli.options.key
       }
     }
   });
@@ -58,8 +70,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-crypt');
   grunt.loadNpmTasks('grunt-reduce');
 
-  grunt.registerTask('build', ['sass', 'copy', 'reduce']);
+  grunt.registerTask('build', ['sass', 'decrypt', 'copy', 'reduce']);
   grunt.registerTask('default', ['build']);
 };

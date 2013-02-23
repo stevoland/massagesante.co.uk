@@ -7,10 +7,17 @@ var express = require('express'),
     lactate = require('lactate'),
     routes = require('./routes'),
     http = require('http'),
-    path = require('path');
+    path = require('path'),
+    config = require('./config.js');
 
 var app = express();
-var staticMiddleware = lactate.static(path.join(__dirname, 'static'));
+var staticMiddleware = lactate.static({
+  root: path.join(__dirname, 'static'),
+  gzip: true,
+  headers: {
+    'Cache-Control': 'public, max-age=1576800001'
+  }
+});
 
 function csrf (req, res, next) {
   res.locals.token = req.session._csrf;
@@ -25,7 +32,7 @@ app.configure(function () {
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.cookieParser());
-  app.use(express.session({ secret: 'secret goes here' }));
+  app.use(express.session({ secret: config.session.secret }));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
@@ -49,6 +56,13 @@ app.configure('production', function () {
 });
 
 
+app.all('/*', function(req, res, next) {
+  if (req.headers && req.headers.host && req.headers.host.match(/^www/) !== null ) {
+    res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+  } else {
+    next();
+  }
+});
 
 app.get('/', csrf, routes.index);
 

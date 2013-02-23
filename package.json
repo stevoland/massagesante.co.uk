@@ -12,14 +12,15 @@
     "express": "*",
     "mmm": "*",
     "validator": "*",
-    "nodemailer": "*"
+    "nodemailer": "*",
+    "lactate": "~0.13.7"
   },
   "devDependencies": {
     "grunt": "0.4.0rc7",
     "grunt-contrib-sass": "0.2.2rc7",
     "grunt-contrib-watch": "latest",
     "grunt-contrib-copy": "0.4.0rc7",
-    "grunt-reduce": "git://github.com/stevoland/grunt-reduce.git",
-    "lactate": "~0.13.7"
+    "grunt-contrib-crypt": "git://github.com/openhoat/grunt-contrib-crypt.git",
+    "grunt-reduce": "git://github.com/stevoland/grunt-reduce.git"
   }
 }
