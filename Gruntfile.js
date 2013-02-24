@@ -50,6 +50,11 @@ module.exports = function (grunt) {
           { src: 'app/*.js', dest: 'dist/', expand: true, flatten: true },
           { src: 'app/routes/*.js', dest: 'dist/routes/', expand: true, flatten: true }
         ]
+      },
+      config: {
+        files: [
+          { src: 'app/config.js', dest: 'dist/config.js' }
+        ]
       }
     },
 
@@ -74,5 +79,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-reduce');
 
   grunt.registerTask('build', ['sass', 'decrypt', 'copy', 'reduce']);
+  grunt.registerTask('config', ['decrypt', 'copy:config']);
   grunt.registerTask('default', ['build']);
 };
