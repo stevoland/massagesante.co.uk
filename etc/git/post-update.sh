@@ -15,3 +15,5 @@ PATH="$PATH:$NODE_PATH"
 $NODE_PATH/npm install
 $NODE_PATH/grunt decrypt --key $1
 
+stop massagesante.co.uk
+start massagesante.co.uk
