@@ -72,6 +72,13 @@ app.get('/contact', function (req, res) {
   res.redirect('/');
 });
 
-http.createServer(app).listen(app.get('port'), function () {
+var server = http.createServer(app).listen(app.get('port'), function () {
   console.log("Express server listening on port " + app.get('port'));
 });
+
+server.on('connection', function(socket) {
+  console.log("A new connection was made by a client.");
+  socket.setTimeout(30 * 1000);
+});
+
+
