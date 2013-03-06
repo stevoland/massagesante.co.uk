@@ -15,7 +15,8 @@ var staticMiddleware = lactate.static({
   root: path.join(__dirname, 'static'),
   gzip: true,
   headers: {
-    'Cache-Control': 'public, max-age=1576800001'
+    'Cache-Control': 'public, max-age=1576800001',
+    'Vary': 'Accept-Encoding'
   }
 });
 
@@ -29,6 +30,7 @@ app.configure(function () {
   app.set('views', __dirname + '/views');
   app.set('view engine', 'mmm');
   app.set('layout', 'layout');
+  app.use(express.compress());
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.cookieParser());
@@ -76,8 +78,7 @@ var server = http.createServer(app).listen(app.get('port'), function () {
   console.log("Express server listening on port " + app.get('port'));
 });
 
-server.on('connection', function(socket) {
-  console.log("A new connection was made by a client.");
+server.on('connection', function (socket) {
   socket.setTimeout(30 * 1000);
 });
 
