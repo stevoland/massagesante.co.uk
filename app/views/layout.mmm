@@ -13,7 +13,9 @@
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width">
-        <meta http-equiv="cleartype" content="on">
+        <!--[if IEMobile]>
+            <meta http-equiv="cleartype" content="on">
+        <![endif]-->
 
         <!--[if lte IE 8]>
             <link rel="stylesheet" href="/static/stylesheets/lt-ie9.css">
