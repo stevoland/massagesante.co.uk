@@ -191,7 +191,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -372,7 +372,7 @@ body {
   bottom: 0;
   z-index: 1;
   background: #B1E3E2;
-  box-shadow: inset 0 0 100px 20px #80d0cf; }
+  box-shadow: inset 0 0 100px 20px #80D0CF; }
 
 .container {
   min-height: 100%;
@@ -579,7 +579,7 @@ label {
 
 input, textarea {
   font-weight: normal;
-  border: 1px solid #333333; }
+  border: 1px solid #333; }
 
 label.error {
   color: #38051a; }

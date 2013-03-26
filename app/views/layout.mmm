@@ -21,6 +21,12 @@
         <!--[if gt IE 8]><!-->
             <link rel="stylesheet" href="/static/stylesheets/style.css">
         <!--<![endif]-->
+
+        <script nobundle="nobundle">
+            if (document.getElementById) {
+                document.documentElement.className = document.documentElement.className.split('no-js').join('js');
+            }
+        </script>
     </head>
     <body>
         <div class="bg"></div>
@@ -50,11 +56,7 @@
             </div>
         </div>
 
-        <script>
-            if (document.getElementById) {
-                document.documentElement.className = document.documentElement.className.split('no-js').join('js');
-            }
-
+        <script nobundle="nobundle">
             (function (w, d) {
                 if (!d.getElementById) {
                     return;

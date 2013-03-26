@@ -20,7 +20,7 @@
     "grunt-contrib-sass": "0.2.2rc7",
     "grunt-contrib-watch": "latest",
     "grunt-contrib-copy": "0.4.0rc7",
-    "grunt-contrib-crypt": "git://github.com/openhoat/grunt-contrib-crypt.git",
-    "grunt-reduce": "git://github.com/stevoland/grunt-reduce.git"
+    "grunt-contrib-crypt": "git+https://github.com/openhoat/grunt-contrib-crypt.git",
+    "grunt-reduce": "git+https://github.com/stevoland/grunt-reduce.git"
   }
 }
